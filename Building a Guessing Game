@@ -1,0 +1,20 @@
+secret_no = 9
+i = 1
+print('''
+Welcome to play
+you have 3 attemps 
+Try to find the secret number of this play....
+
+''')
+while i <= 3 :
+    temp = input("Guess : ")
+    if int(temp) == 9 :
+        print("You win!")
+        break
+    elif i == 3 and int(temp) != 9 :
+        print("You Failed!")
+        break
+    else:
+        i+=1
+print('''
+Thank You!''')

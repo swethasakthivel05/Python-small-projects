@@ -1,0 +1,9 @@
+print("To Convert kilograms into pounds "
+      "(or) pounds into kilograms")
+weight = input("weight: ")
+value = input("(L)bs or (W)g: ")
+
+if value == 'l' or value == 'L':
+    print(f"You are {int(weight) * 0.45} Kilos")
+else:
+    print(f"You are {int(weight) / 0.45} Pounds")

@@ -1,0 +1,17 @@
+word = ""
+while word != "quit" :
+    word = input("> ").lower()
+    if(word == "start") :
+        print("Car Started... Ready to go.")
+    elif(word == "stop") :
+        print("Car Stoped.")
+    elif(word == "help") :
+        print('''
+        start - to start the car
+        stop - to stop the car
+        quit - to exit''')
+
+    elif(word == "quit") :
+        break
+    else :
+        print("I don't understand that...")

@@ -1,10 +1,19 @@
 word = ""
+f = False
 while word != "quit" :
     word = input("> ").lower()
     if(word == "start") :
-        print("Car Started... Ready to go.")
+        if f :
+            print("Car already Started!")
+        else :
+            f = True
+            print("Car Started... Ready to go.")
     elif(word == "stop") :
-        print("Car Stoped.")
+        if not f :
+            print("Car already Stoped!")
+        else:
+            f = False
+            print("Car Stoped.")
     elif(word == "help") :
         print('''
         start - to start the car

@@ -1,0 +1,10 @@
+message = input("> ")
+word = message.split(' ')
+emogi = {
+    ":)" : "😀",
+    ":(" : "☹️"
+}
+output = ""
+for i in word :
+    output += emogi.get(i,i) + " "
+print(output)
